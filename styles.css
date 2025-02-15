@@ -39,7 +39,7 @@ span{
 }
 
 .amzn-logo{
-    background-image: url(/Amazon/amazon_logo.png);
+    background-image: url(amazon_logo.png);
     background-size: contain;
     width: 114px;
     height: 58px;
