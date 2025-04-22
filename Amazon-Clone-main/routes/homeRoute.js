@@ -38,6 +38,7 @@ Router.get('/sell', (req,res) => {
     res.send("Sell");
 });
 
+
 Router.get('/signin', async(req,res) => {
     res.render('signIn');
 });
@@ -45,4 +46,5 @@ Router.get('/signin', async(req,res) => {
 Router.get('/signup', async(req,res) => {
     res.render('signup');
 });
+
 module.exports = Router
