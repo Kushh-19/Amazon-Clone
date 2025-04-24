@@ -39,7 +39,7 @@ span{
 }
 
 .amzn-logo{
-    background-image: url(amazon_logo.png);
+    background-image: url(../images/amazon_logo.png);
     background-size: contain;
     width: 114px;
     height: 58px;
@@ -147,9 +147,11 @@ span{
     width: 73px;
 }
 
-.language-logo{
+.language-logo > img{
     height: 16px;
     width: 21px;
+    position: relative;
+    top: 1.5px;
 }
 
 .login-container, .order-container{
