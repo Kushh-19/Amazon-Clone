@@ -2,8 +2,8 @@ const express = require('express');
 const Router = express.Router();
 
 
-Router.get('/',(req,res) => {
-    res.render('index.ejs');
+Router.get('/', async(req,res) => {
+    res.render('index.ejs',{signin: "User"});
 });
 
 Router.get('/location', (req,res)=> {
@@ -36,6 +36,15 @@ Router.get('/gift-cards', (req,res) => {
 
 Router.get('/sell', (req,res) => {
     res.send("Sell");
+});
+
+
+Router.get('/signin', async(req,res) => {
+    res.render('signIn');
+});
+
+Router.get('/signup', async(req,res) => {
+    res.render('signup');
 });
 
 module.exports = Router
