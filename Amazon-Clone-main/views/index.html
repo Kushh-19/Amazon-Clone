@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/stylesheets/styles.css">
+    <link rel="import" href="component.html">
+    <link rel="icon" href="amazon_logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Amazon</title>
+</head>
+<body>
+    <header>
+        <span class="navbar">
+        
+            <span class="left-nav">
+                
+                <a href=""><span class="amzn-logo border"></span></a>
+                
+                <span class="address border">
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    <a href="/location"><div class="add-text">
+                        <span id="add-upr"><b>Deliver to</span>
+                        <span id="add-lwr">India</b></span>
+                    </div></a>
+                </span>
+            </span>
+        
+            <form class="search-panel search-border" action="/search" method="post">
+                <span class="search-container">
+                    <select class="search-select"><option>All</option></select>
+                    <input class="search-ip thick-border" type="text" placeholder="Search Amazon">
+                    <button class="search-btn extra-border"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </span>
+            </form>
+
+            <span class="right-nav">
+                <a href="#">
+                    <span class="language-select border">
+                        <span class="language-logo"><img src="images/usFlag.svg" alt=""></span>
+                        <p><b>EN</b></p>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </span>
+                </a>
+
+                <a href= "/signin">
+                    <span class="login-container border">
+                        <span class="upr-login">
+                            <b>Hello, <%= signin %></b>
+                        </span>
+                        <span class="lwr-login">
+                            <b>Account & lists</b> 
+                            <i class="fa-solid fa-caret-down"></i>
+                        </span>
+                    </span>
+                </a>
+
+                    <a href="/return-order"><span class="order-container border">
+                        <span class="upr-ordr">
+                            <b>Returns</b>
+                        </span>
+                        <span class="lwr-ordr">
+                            <b>& Orders</b>
+                        </span>
+                    </span>
+                </a>
+                
+                <a href="/cart">
+                    <span class="cart-container border">
+                        <span class="cart-logo">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </span>
+
+                        <span class="cart-count">
+                            <b>0</b>
+                        </span>
+
+                        <span class="cart-text">
+                            <b>cart</b>
+                        </span>
+                    </span>
+                </a>
+            </span>
+        </span>
+        
+        <span class="catagory">
+            <span class="all-catagories border">
+                <i class="fa-solid fa-bars"></i>
+                <b>All</b>
+            </span>
+
+            <a href="/todays-deals">
+                <span class="catagory-1 ">
+                    Today's Deals
+                </span>
+            </a>
+            
+            <a href="/customer-service">
+                <span class="catagory-2 ">
+                    Customer Service
+                </span>
+            </a>
+            
+            <a href="/registery">
+                <span class="catagory-3">
+                    Registery
+                </span>
+            </a>
+            
+            <a href="/gift-cards">
+                <span class="catagory-4">
+                    Gift Cards
+                </span>
+            </a>
+            
+            <a href="/sell">
+                <span class="catagory-5">
+                    Sell
+                </span>
+            </a>
+            
+        </span>
+        
+    </header>
+
+    
+
+</body>
+</html>
