@@ -87,6 +87,12 @@ span{
     border-radius: 10px;
 }
 
+.search-container:hover{
+    box-sizing: unset;
+    border: 2.5px solid #f3bd47f2;
+    padding: 1px;
+    border-radius: 10px;
+}
 .search-select{
     height: 100%;
     width: 53px;
@@ -100,6 +106,7 @@ span{
 .search-select:hover{
     background: #d4d4d4;
     color: #000000;
+    
 }
 
 .search-ip{
@@ -240,10 +247,6 @@ span{
     /* border: none; */
 }
 
-.catagory-1:hover, .catagory-2:hover, .catagory-3:hover, .catagory-4:hover, .catagory-5:hover{
-    border: 1.5px solid white;
-}
-
 .catagory-1{width: 103px;}
 .catagory-2{width: 130px;}
 .catagory-3{width: 70px;}
@@ -251,9 +254,3 @@ span{
 .catagory-5{width: 40px;}
 
 /* ***********************hero panel************************* */
-
-
-
-.test{
-    /* Hi just testinggggggggggggggg */
-}
